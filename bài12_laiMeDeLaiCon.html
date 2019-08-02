@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Viết chương trình tính lãi ngân hàng (lãi mẹ đẻ lại con) khi biết số tiền ban đầu,
+    // số tháng cho vay và lãi xuất hàng tháng.
+    // Số tiền lãi = Số tiền gửi x lãi suất (%/năm) x số ngày thực gửi/360
+    function laiXuat () {
+        let tienGui = Number(prompt("nhap so tien gui ngan hang"));
+        let soNgayGuiTien = Number(prompt("nhap so ngay gui tien:"));
+        let laiXuatMotNam = 0.5;
+        let result = tienGui * laiXuatMotNam * soNgayGuiTien / 360;
+        if (tienGui < 0){
+            alert("khong co tien gui");
+        } else {
+            alert( "so tien lai sau " + soNgayGuiTien + " ngay la : " + result + " VND");
+        }
+    }
+    laiXuat();
+</script>
+
+</body>
+</html>

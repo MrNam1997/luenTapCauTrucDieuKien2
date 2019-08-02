@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // giai phuong trinh bac 1 ax + b = 0
+    function equation1() {
+        let numberA = Number(prompt("Enter number a:"));
+        let numberB = Number(prompt("Enter number b:"));
+        if (numberA == 0 && numberB == 0){
+            alert("phuong trinh vo so nghiem");
+        } else if (numberA == 0 && numberB != 0){
+            alert(" phuong trinh vo nghiem")
+        } else {
+            alert("phuong  trinh co nghiem duy nhat la " + Math.round( (-numberB) / (numberA) ));
+        }
+    }
+    equation1();
+</script>
+
+</body>
+</html>

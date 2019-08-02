@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--tính diện tích hình vuông-->
+<script>
+    function areaSquare() {
+        let Enter_a_square_edge = Number(prompt(" enter lenght is a:"));
+        let areaSquare = Enter_a_square_edge * 2;
+        let result = areaSquare;
+        if (Enter_a_square_edge < 0){
+            alert(" no edges less than 0, Please enter the edge greater than 0!! ");
+        } else {
+            alert(" area square: " + result);
+        }
+    }
+    areaSquare();
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Tính diện tích tam giác vuông khi biết 02 cạnh kề a, b.
+    function triangleArea() {
+        let numberA = Number(prompt("Enter the edge a triangle "));
+        let numberB = Number(prompt("Enter the edge b triangle "));
+        let resuilt = 1 / 2 * numberA * numberB;
+        if (numberA < 0 || numberB < 0) {
+            alert("không có tam giác vuông nào cạnh bằng 0!");
+        } else {
+            alert("triangle area = " + resuilt);
+        }
+    }
+    triangleArea();
+</script>
+
+</body>
+</html>

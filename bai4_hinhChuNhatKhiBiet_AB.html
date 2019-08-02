@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function rectangularArea() {
+        let numberA = Number(prompt("Enter the with rectangular:"));
+        let numberB = Number(prompt("Enter the height rectangular:"));
+        let rectangularArea = numberA * numberB;
+        if ((numberA < 0) || (numberB < 0)){
+            alert("không có cạnh nào nhỏ hơn 0, mời reset trang và nhập lại!");
+        } else if (numberA === numberB){
+            alert("đây là hình chữ nhật đặc biệt, area = " + rectangularArea );
+        } else{
+            alert("rectangularArea =  " + rectangularArea);
+        }
+    }
+    rectangularArea();
+    
+</script>
+
+</body>
+</html>
